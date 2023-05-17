@@ -1,0 +1,44 @@
+body{
+    justify-content: center;
+    text-align: center;
+    background: url(fondo.jpg);
+    background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0%;
+  }
+
+.container{
+    width: max-content;
+    height: max-content;
+  background-size: center;
+  padding: 0px 60px;
+  margin: 40px 0;
+  display: inline-block;
+  border: 8px solid rgba(0, 0, 0, 0.57);
+  border-radius: 10px;
+}
+
+  fieldset{
+    margin-left: 0vw;
+    margin-right: 0vw;
+    background-position:  center;
+  width: center;
+  height: center;
+  background-color: rgba(0, 0, 0, 0.473);
+  border-radius: 25px;
+  display: inline-flex;
+  padding: 5px 30px;
+}
+
+input{
+    border-radius: 10px;
+}
+
+button{
+    border-radius: 10px;
+    text-align: center;
+}
+
+.ingresaDatos{
+    background-color:rgba(0, 0, 0, 0.359);
+}

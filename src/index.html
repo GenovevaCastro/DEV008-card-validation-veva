@@ -5,10 +5,41 @@
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+  <body></body>
+    <div class="container">
+      <! ––«contenedor para dar estilo«––>
+        <br>
+        <img src="compras.png" widht="200vw" height="400vw">
+        <br>
+        <br>
+        <div class="ingresaDatos">
+          <label style= "text-align:center;font-size: 30px ;color: white;"><i>Ingresa los datos de tu tarjeta y realiza tu pago</i></label>
+      </div>
+        <br>
+        <fieldset style="text-align: left;">
+            <div>
+              <form action="" id="formulario" name="formulario">
+                <! ––«para indicar que se va a recibir informacion del usuario«––>
+              <br>
+    
+              <input style="font-family: fantasy; font-size: 20px;text-align: center"; type="text" name="nombre" id="nombre" minlength="10" placeholder="Nombre del titular" required/>
+                <br>
+                  <input style="font-family: fantasy; font-size: 20px;text-align: center"; type="number" maxlength="16" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" name="tarjeta" id="tarjeta" pattern="[0-9]+" placeholder="Número de tarjeta">
+                  <! ––«el oninput nos ayuda a poner una condicional if dentro del input para poder limitar el numero de caracteres que ingresa el usuario a 16«––>
+                  <br>
+              <input style="font-family: fantasy; font-size: 20px;text-align: center"; maxlength="3" minlength="3"; type="text" name="cvv" id="cvv" pattern="[0-9]+" placeholder="CVV" required>
+            <br>
+            <br>
+            <center><button type="button" id="boton" style="font-family:Geneva; font-size:medium; text-align:center;"> Validar datos </button></center>
+            </div>
+            </div>
+            <br>
+          </form>
+        </fieldset>
+        </div>
+        </div>
+    <footer style="color: rgba(255, 255, 255, 0.647);"> By Genoveva Castro Rivera</footer>
+    <br>
     <script src="index.js" type="module"></script>
   </body>
 </html>
