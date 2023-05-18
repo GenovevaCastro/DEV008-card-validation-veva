@@ -1,15 +1,19 @@
 const validator = {
 
   isValid(tarjeta) {
+    //funcion que me va a validar toda la tarjeta
 
     return verificarSiEsMultiploDeDiez(
       sumaElementosDelArray(
         sumaDeDigitosMayoresDeDiez(
           doblarCadaSegundoDigito(
             voltearTarjeta(tarjeta)))))
+            //return que retorna todas las funciones dentro de una ultima pero que tambien se ejecutan todas las anteriores
   },
+
   maskify(tarjeta) {
     return mascara(tarjeta)
+    //funcion para mandar a llamar la funcion mascara de la tarjeta
   }
 
 };
@@ -108,7 +112,9 @@ function verificarSiEsMultiploDeDiez(numeroQueVerificara) {
 }
 
 function mascara(tarjeta) {
+  //se crea una funcion para enmascarar la tarjeta
   return tarjeta.slice(0, -4).replace(/./g, "#") + tarjeta.slice(-4);
+  //retrona la tarjeta y remplaza todos los caracteres por # menos los ultimos 4
 }
 
 export default validator;
