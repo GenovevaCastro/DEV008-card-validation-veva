@@ -1,9 +1,9 @@
-# Tarjeta de crédito válida
+# Validar tarjeta de crédito
 
 ## Índice
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
+* [1. Objetivo del programa](#1-Objetivo)
+* [2. Resumen](#2-resumen-del-proyecto)
 * [3. Consideraciones generales](#3-consideraciones-generales)
 * [4. Hito: Criterios de aceptación mínimos del proyecto](#4-hito-criterios-de-aceptación-mínimos-del-proyecto)
 * [5. Hito Opcional: Mostrar la franquicia de tarjeta](#5-hito-opcional-mostrar-la-franquicia-de-tarjeta)
@@ -14,38 +14,22 @@
 
 ***
 
-## 1. Preámbulo
+## 1. Objetivo del proyecto
 
-El [algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn),
+Este proyecto consta de una aplicación web para un e-commerce, donde únicamente se realiza la validación del número de tarjeta de crédito que ingresa el usuario a un formulario. 
+
+La validación de tarjeta se basa en el : [algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn),
 también llamado algoritmo de módulo 10, es un método de suma de verificación,
 se utiliza para validar números de identificación; tales como el IMEI de los
 celulares, tarjetas de crédito, etc.
 
-Este algoritmo es simple. Obtenemos la reversa del número a verificar (que
-solamente contiene dígitos [0-9]); a todos los números que ocupan una posición
-par se les debe multiplicar por dos, si este número es mayor o igual a 10,
-debemos sumar los dígitos del resultado; el número a verificar será válido si
-la suma de sus dígitos finales es un múltiplo de 10.
+En este algoritmo se obtiene la reversa del número ingresado por el usuario (que solamente contiene dígitos [0-9]); a todos los números que ocupan una posición par se les multiplica por dos, si este número es mayor o igual a 10, se suman los dígitos del resultado; el número a verificar será válido si la suma de sus dígitos finales es un múltiplo de 10.
 
-![gráfica de algoritmo de Luhn](https://user-images.githubusercontent.com/12631491/217016579-865679e0-0949-4afd-b13f-d2ebba7a0c54.png)
+![gráfica de algoritmo de Luhn](<src/Imagen algoritmo.jpg">)
 
 ## 2. Resumen del proyecto
 
-En este proyecto tendrás que construir una aplicación web que le permita a un
-usuario validar el número de una tarjeta de crédito. Además, tendrás que
-implementar funcionalidad para ocultar todos los dígitos de una tarjeta menos
-los últimos cuatro.
-
-La temática es libre. Tú debes pensar en qué situaciones de la vida real se
-necesitaría validar una tarjeta de crédito y pensar en cómo debe ser esa
-experiencia de uso (qué pantallas, explicaciones, mensajes, colores, ¿marca?)
-etc.
-
-Como continuación del proyecto de preadmisión, volverás a trabajar sobre
-fundamentos de JavaScript, incluyendo conceptos como variables, condicionales,
-y funciones, así como eventos y manipulación básica del DOM, fundamentos de
-HTML y CSS. Mientras desarrollas este proyecto, te familiarizarás con nuevos
-conceptos también.
+"Impresión y diseño Veva" es una tienda de comercio electrónico, dedicada 
 
 ### Los objetivos generales de este proyecto son los siguientes
 
