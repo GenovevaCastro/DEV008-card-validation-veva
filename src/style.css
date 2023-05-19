@@ -14,7 +14,7 @@ body{
   padding: 0px 60px;
   margin: 40px 0;
   display: inline-block;
-  border: 8px solid rgba(0, 0, 0, 0.57);
+  border: 8px solid rgba(0, 0, 0, 0.359);
   border-radius: 10px;
 
 }
@@ -25,7 +25,7 @@ body{
     background-position:  center;
   width: center;
   height: center;
-  background-color: rgba(0, 0, 0, 0.473);
+  background-color: rgba(0, 0, 0, 0.359);
   border-radius: 25px;
   display: inline-flex;
   padding: 5px 30px;
