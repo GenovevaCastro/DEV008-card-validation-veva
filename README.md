@@ -2,14 +2,13 @@
 
 ## Índice
 
-* [1. Objetivo del proyecto](#1-Objetivo)
-* [2. Resumen](#2-resumen-del-proyecto)
-* [4. Criterios del proyecto](#4-hito-criterios-de-aceptación-mínimos-del-proyecto)
-* [5. Hito Opcional: Mostrar la franquicia de tarjeta](#5-hito-opcional-mostrar-la-franquicia-de-tarjeta)
-* [6. Consideraciones técnicas](#6-consideraciones-técnicas)
-* [7. Objetivos de aprendizaje](#7-objetivos-de-aprendizaje)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Para considerar Project Feedback](#9-para-considerar-project-feedback)
+* [1. Objetivo del proyecto](#1-objetivo-del-proyecto)
+* [2. Resumen](#2-resumen)
+* [3. Criterios del proyecto](#3-criterios-del-proyecto)
+* [4. Consideraciones técnicas](#4-consideraciones-técnicas)
+* [5. Funcionalidad](#5-funcionalidad)
+* [6. Tips](#6-tips)
+
 
 ***
 
@@ -33,7 +32,7 @@ Con la única funcionalidad de validación de tarjeta.
 * Lenguajes: Javascript, HTML, CSS
 * Cuenta con pruebas unitarias
 
-## 4. Criterios del proyecto
+## 3. Criterios del proyecto
 
 **1. Una interfaz que permite al usuari@:**
 
@@ -58,7 +57,7 @@ La página se dedica a la venta en linea de servicios o productos de impresión 
 * El objetivo de estos usuarios es adquirir estos productos o servicios mediante una compra en linea de una manera rápida y segura. 
 * Esta página ayudará a que el usuario pueda validar su tarjeta de crédito, ocultando los datos de esta al ser ingresada.
 
-## 6. Consideraciones técnicas
+## 4. Consideraciones técnicas
 
 La lógica del proyecto debe esta implementada completamente en JavaScript. 
 En este proyecto NO se usan librerías o frameworks, solo JavaScript puro también conocido como Vanilla JavaScript.
@@ -71,10 +70,10 @@ test`.
 * `src/style.css`: Este archivo contiene las reglas de estilo utilizadas para este proyecto.
 
 ```js
- * Alineación: Centrada.
- * Tipografías: Fantasy  &  Geneva.
- * Fondo: De la identidad corporativa de la empresa "Impresión y diseño Veva".
- * Imagen: Representativa de los productos seleccionados al carrito de compras.
+ * Alineación: centrada.
+ * Tipografías: fantasy  &  geneva.
+ * Fondo: de identidad corporativa de la empresa "Impresión y diseño Veva".
+ * Imagen: representativa de los productos seleccionados al carrito de compras.
  * Opacidades: rgba(0, 0, 0, 0.359)
  * Paleta: rgb(0, 0, 0) - rgb(64, 44, 25) - rgb(142, 108, 58) - rgb(126, 93, 48) - rgb(255, 255, 255) - rgb(194, 12, 14)
  ```
@@ -117,19 +116,19 @@ En cuanto a reglas/guías de estilo en sí, se usan las recomendaciones _por def
 
 ***
 
-## 7. Objetivos
+## 5. Funcionalidad
 
 
-**1. Una interfaz que permite a la usuaria:**
+**1. QUI PONER LAS FUNCIONES:**
 
 * Insertar un numero (texto) que quiere validar.    
 * Le oculta todos los dígitos del número de tarjeta a exepción de los últimos 4 caracteres.
-* -Una vez ingresado el número se ejecuta el algoritmo de Luhn-. 
+* Una vez ingresado el número se ejecuta el algoritmo de Luhn. 
 * Al usuario le aparece una alerta que anuncia si la tarjeta es valida o no.   
 * Diseño amigable con el usuario. 
 
 
-## 8. Tips.
+## 6. Tips.
 
 ### Prepara tu PC para trabajar
 
