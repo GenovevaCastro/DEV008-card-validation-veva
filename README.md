@@ -20,7 +20,7 @@ que se utiliza para validar números de identificación; tales como el IMEI de l
 celulares, tarjetas de crédito, etc.
 En la siguiente imagen se muestran los pasos para el algoritmo de Luhn:
 
-![gráfica de algoritmo de Luhn](<src/Imagen algoritmo.jpg">)
+![gráfica algoritmo de Luhn](<src/Imagen algoritmo.jpg">)
 
 ## 2. Resumen
 
@@ -45,11 +45,8 @@ Con la única funcionalidad de validación de tarjeta.
 **2. Pruebas unitarias de los métodos.**  
 
 Los metódos de `validator` (`isValid` y `maskify`) tienen cobertura con pruebas unitarias.
-
-**3. Código del proyecto".**  
-El código se encuentra en las carpetas de este repositorio (accesibles públicamente).
   
-**4. Definición del producto.**  
+**3. Definición del producto.**  
 
 La página se dedica a la venta en linea de servicios o productos de impresión y diseño.  
 
@@ -74,11 +71,11 @@ test`.
  * Tipografías: fantasy  &  geneva.
  * Fondo: de identidad corporativa de la empresa "Impresión y diseño Veva".
  * Imagen: representativa de los productos seleccionados al carrito de compras.
- * Opacidades: rgba(0, 0, 0, 0.359)
+ * Opacidades: rgba(0, 0, 0, 0.359).
  * Paleta: rgb(0, 0, 0) - rgb(64, 44, 25) - rgb(142, 108, 58) - rgb(126, 93, 48) - rgb(255, 255, 255) - rgb(194, 12, 14)
  ```
 
-![gráfica de algoritmo de Luhn](<src/paleta de colores.jpg">)
+![Gráfica paleta de colores](<src/paleta de colores.jpg">)
 
 * `src/validator.js`: En este archivo se implementa el objeto `validator`, el cual ya está _exportado_ en el _boilerplate_. 
 Este objeto (`validator`) conitiene dos métodos:
@@ -150,7 +147,7 @@ En cuanto a reglas/guías de estilo en sí, se usan las recomendaciones _por def
    `npm start` para arrancar el servidor web y dirígete a
    `http://localhost:5000` en tu navegador.
 
-   - [ ] **Pruebas unitarias (unit tests)**
+   **Pruebas unitarias (unit tests)**
 
   <details><summary>Links</summary><p>
 
