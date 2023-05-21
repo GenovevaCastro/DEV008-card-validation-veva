@@ -20,7 +20,8 @@ que se utiliza para validar números de identificación; tales como el IMEI de l
 celulares, tarjetas de crédito, etc.
 En la siguiente imagen se muestran los pasos para el algoritmo de Luhn:
 
-![gráfica algoritmo de Luhn](<src/Imagen algoritmo.jpg">)
+![gráfica algoritmo de Luhn](https://github.com/GenovevaCastro/DEV008-card-validation-veva/assets/131982616/0e4146ad-eb8d-488d-93f7-29f9021a37c4)
+oritmo.jpg">)
 
 ## 2. Resumen
 
@@ -75,7 +76,8 @@ test`.
  * Paleta: rgb(0, 0, 0) - rgb(64, 44, 25) - rgb(142, 108, 58) - rgb(126, 93, 48) - rgb(255, 255, 255) - rgb(194, 12, 14)
  ```
 
-![Gráfica paleta de colores](<src/paleta de colores.jpg">)
+![Gráfica paleta de colores](https://github.com/GenovevaCastro/DEV008-card-validation-veva/assets/131982616/5533a7be-d5b6-40b5-8ffc-78291a836a33)
+ colores.jpg">)
 
 * `src/validator.js`: En este archivo se implementa el objeto `validator`, el cual ya está _exportado_ en el _boilerplate_. 
 Este objeto (`validator`) conitiene dos métodos:
