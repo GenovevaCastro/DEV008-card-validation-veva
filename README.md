@@ -18,7 +18,7 @@ La validación de tarjeta se basa en el [algoritmo de Luhn](https://es.wikipedia
 celulares, tarjetas de crédito, etc.
 En la siguiente imagen se muestran los pasos para el algoritmo de Luhn:
 
-![gráfica algoritmo de Luhn](https://github.com/GenovevaCastro/DEV008-card-validation-veva/assets/131982616/5533a7be-d5b6-40b5-8ffc-78291a836a33)
+![gráfica algoritmo de Luhn](https://github.com/GenovevaCastro/DEV008-card-validation-veva/blob/main/src/Imagen%20algoritmo.jpg?raw=true)
 
 ## 2. Resumen
 
