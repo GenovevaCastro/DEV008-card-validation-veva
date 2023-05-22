@@ -117,30 +117,37 @@ En cuanto a reglas/guías de estilo en sí, se usan las recomendaciones _por def
 **Descripción validator.js:**
 
 * Function voltearTarjeta(tarjeta): 
-- Esta función se encarga de voltear los numeros de la tarjeta que el usuario ingresa la cuál retorna en tarjetaInvertida.
+
+Esta función se encarga de voltear los numeros de la tarjeta que el usuario ingresa la cuál retorna en tarjetaInvertida.
 
 * Function doblarCadaSegundoDigito(tarjetaInvertida): 
-- Esta función multiplicara por 2 cada segundo digito de la tarjetaInvertida y la retornara en un arrayConNumerosYaMultiplicados.
+
+Esta función multiplicara por 2 cada segundo digito de la tarjetaInvertida y la retornara en un arrayConNumerosYaMultiplicados.
 
 * Function sumaDeDigitosMayoresDeDiez(arrayConNumerosYaMultiplicados):
-- En esta función inicializamos un arrayTarjetaConSumaDeNumerosMayoresDeDiez, en la cual  realizamos un foreach en el arrayConNumerosYaMultiplicados, de cada elemento hacemos la   condicional de si el elemento es mayor a 9: 
- Hacemos un nuevo array que es igual a elementoArray el cual es igual a el elemento convertido a un string y hacemos una division de este. Se crea una constante donde se guardara el resultado de las suma de los digitos del elemento mayor a 9.
- Esta constante resultadoDeSuma sera = a la funcion sumaElementosDelArray del (elementoArray) y coloca el resultadoDeSuma en la ultima posición del arrayTarjetaConSumaDeNumerosMayoresDeDiez, de lo contrario si no es mayor a 10 coloca el elemento en la ultima posición del arrayTarjetaConSumaDeNumerosMayoresDeDiez. Y retorna a arrayTarjetaConSumaDeNumerosMayoresDeDiez.
+
+En esta función inicializamos un arrayTarjetaConSumaDeNumerosMayoresDeDiez, en la cual  realizamos un foreach en el arrayConNumerosYaMultiplicados, de cada elemento hacemos la   condicional de si el elemento es mayor a 9: 
+Hacemos un nuevo array que es igual a elementoArray el cual es igual a el elemento convertido a un string y hacemos una division de este. Se crea una constante donde se guardara el resultado de las suma de los digitos del elemento mayor a 9.
+Esta constante resultadoDeSuma sera = a la funcion sumaElementosDelArray del (elementoArray) y coloca el resultadoDeSuma en la ultima posición del arrayTarjetaConSumaDeNumerosMayoresDeDiez, de lo contrario si no es mayor a 10 coloca el elemento en la ultima posición del arrayTarjetaConSumaDeNumerosMayoresDeDiez. Y retorna a arrayTarjetaConSumaDeNumerosMayoresDeDiez.
 
 * Function sumaElementosDelArray(arrayDeNumeros):
-- Esta función se encarga de sumasr los digitos del elemento mayor a 9, esta funcion se utiliza en la funcion de sumaDeDigitosmayoresDeDiez, cuando se manda a llamar esta función tiene una variable llamada sumaDeDigitos la cual de inicio vale 0, pero despues del arrayDeNumeros realizamos un foreach de los digitos del elemento y tenemos que entonces sumaDeDigitos = sumaDeDigitos + parseInt(digito); 
+
+Esta función se encarga de sumasr los digitos del elemento mayor a 9, esta funcion se utiliza en la funcion de sumaDeDigitosmayoresDeDiez, cuando se manda a llamar esta función tiene una variable llamada sumaDeDigitos la cual de inicio vale 0, pero despues del arrayDeNumeros realizamos un foreach de los digitos del elemento y tenemos que entonces sumaDeDigitos = sumaDeDigitos + parseInt(digito); 
 Por ejemplo: si el elemento mayor a 9 es 13, se hace el for each del primer digito que es 1, asi que sumaDeDigitos = sumaDeDigitos + parseInt(1), entonces suma de digitos + 1 es + a 1 y lo returna a suma de digitos, por tanto ahora sumaDeDigitos = 1.
 Se realiza el for each del segundo digito que es 3, asi que sumaDeDigitos = sumaDeDigitos + parseInt(3), entonces suma de digitos que ahora vale 1 + 3 = 4 y lo returna a suma de digitos, por tanto ahora sumaDeDigitos = 4.
 y hace esta funcion en cada elemento mayor a 9 retornando estos a suma de digitos. 
  
 * Function verificarSiEsMultiploDeDiez(numeroQueVerificara):
-- En la cual siel númeroQueVerificara % 10 es = a 0 retornara un true, de lo contrario un false. 
+
+En la cual siel númeroQueVerificara % 10 es = a 0 retornara un true, de lo contrario un false. 
 
 * Function mascara(tarjeta):
-- Retornara la tarjeta remplazando todos los elementos por un # menos los ultimos 4.
+
+Retornara la tarjeta remplazando todos los elementos por un # menos los ultimos 4.
 
 * isValid(tarjeta): 
-- Por ultimo retornamos verificarSiEsMultiploDeDiez(
+
+Por ultimo retornamos verificarSiEsMultiploDeDiez(
       sumaElementosDelArray(
         sumaDeDigitosMayoresDeDiez(
           doblarCadaSegundoDigito(
@@ -150,8 +157,9 @@ y hace esta funcion en cada elemento mayor a 9 retornando estos a suma de digito
 
   **Descripción index.js:**
 
-  * Function mostrarAlerta(validacion):
-- Si validación es true manda una alerta con Tarjeta vlida, si es false manda alerta de tarjeta invalida.
+* Function mostrarAlerta(validacion):
+
+Si validación es true manda una alerta con Tarjeta vlida, si es false manda alerta de tarjeta invalida.
 Esta funcion de mostrar alerta es llamada en la parte superior del archivo como: mostrarAlerta(validator.isValid(tarjeta)); es decir, mostrar alerta del validator, en isValid de la tarjeta, en el cual retorna un true o false que activa las alertas. 
 Así mismo document.getElementById("tarjeta").value = validator.maskify(tarjeta) que es donde se manda a llamar la función que enmascara la tarjeta.
 
