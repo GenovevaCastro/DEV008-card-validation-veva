@@ -8,7 +8,7 @@ const validator = {
         sumaDeDigitosMayoresDeDiez(
           doblarCadaSegundoDigito(
             voltearTarjeta(tarjeta)))))
-            //return que retorna todas las funciones dentro de una ultima pero que tambien se ejecutan todas las anteriores
+    //return que retorna todas las funciones dentro de una ultima pero que tambien se ejecutan todas las anteriores
   },
 
   maskify(tarjeta) {

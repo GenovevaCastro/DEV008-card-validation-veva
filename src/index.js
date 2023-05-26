@@ -4,12 +4,17 @@ const boton = document.getElementById("boton");
 // variable boton es igual al boton que obtenemos del html con id boton
 
 boton.addEventListener("click", () => {
-    //agregamos un escuchador al boton para que al hacer click haga lo siguiente
+  //agregamos un escuchador al boton para que al hacer click haga lo siguiente
 
   const tarjeta = document.getElementById("tarjeta").value;
   //tarjeta es igual al valor del id tarjeta del html 
   
-  mostrarAlerta(validator.isValid(tarjeta));
+  if(tarjeta.trim() !== ""){
+    mostrarAlerta(validator.isValid(tarjeta));
+  }else{
+    alert("No acepta campos vacios")
+  }
+  
   //haz la funcion mostrar alerta con la funcion isValid del documento del validator la cual contiene todas las funciones del algritmo de luhn
 
   document.getElementById("tarjeta").value = validator.maskify(tarjeta);
@@ -18,7 +23,7 @@ boton.addEventListener("click", () => {
 });
 
 function mostrarAlerta(validacion) {
-    //mostrar alerta de si es valida o no la tarjeta
+  //mostrar alerta de si es valida o no la tarjeta
   if (validacion) {
     //si bandera es veradero
     alert('Tarjeta Valida')
